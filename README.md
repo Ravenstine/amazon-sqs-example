@@ -18,3 +18,8 @@ message_sender.send_message "whutup"
 ```
 
 My example doesn't support spaces or sending key value pairs, but it should point you in the right direction in terms of authenticating.
+
+## Things to keep in mind
+
+The query parameters must be in alphabetical order(so that the generated signature is consistent), with the exception of the signature key which is placed at the end of the parameters.
+
